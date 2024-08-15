@@ -21,7 +21,7 @@ function Pelis() {
       setPelis(data.map((peli) => {
         return (
           <li className="" key={peli.id} >
-            Peli: <span className='font-bold uppercase'>{peli.nombre}</span>, propuesto por: <span className='text-customBlue'>{peli.usuario.usuario}</span>, estado: {peli.vista ? <span className='text-customGreen'>Vista</span> : <span className='text-customPink'>No vista</span>}
+            <span className='font-bold uppercase'>{peli.nombre}</span>, propuesto por: <span className='text-customBlue'>{peli.usuario.usuario}</span>, estado: {peli.vista ? <span className='text-customGreen'>Vista</span> : <span className='text-customPink'>No vista</span>}
           </li>
         )
       }));
