@@ -55,7 +55,7 @@ function PostInfo() {
             <section className='flex justify-between items-center'>
                 <article className='flex items-center'>
                     <img className='w-20 rounded-full mr-8' src={usuario.pic} alt={usuario.usuario} />
-                    <p className='text-4xl font-caveat font-bold'>{usuario.usuario}</p>
+                    <p className='text-3xl font-caveat font-bold' style={{ alignSelf: 'start' }}>{usuario.usuario}</p>
                 </article>
                 <article className='flex flex-col items-end'>
                     <p className='text-gray-600'>{formattedDate}</p>
