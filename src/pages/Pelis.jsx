@@ -25,8 +25,16 @@ function Pelis() {
           </li>
         )
       }));
+
+    }
+
+    const fetchPelisN = async () => {
+      const response = await fetch('https://deply-md.onrender.com/peliculas/no-vistas');
+      const data = await response.json();
       setPelisR(data);
     }
+
+    fetchPelisN();
     fetchPelis();
   }, []);
 
@@ -63,7 +71,7 @@ function Pelis() {
 
       if (!response.ok) {
         throw new Error(data.detail || 'Error al crear plan');
-      }else{
+      } else {
         window.location.reload();
       }
     } catch (error) {
